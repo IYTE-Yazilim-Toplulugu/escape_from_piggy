@@ -1,3 +1,9 @@
+.claude/
+.gemini/
+.vscode/
+.github/agents/
+_bmad/
+
 .utmp/
 /[Ll]ibrary/
 /[Tt]emp/
