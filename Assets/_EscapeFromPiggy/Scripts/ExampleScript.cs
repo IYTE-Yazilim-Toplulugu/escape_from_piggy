@@ -73,7 +73,7 @@ namespace EscapeFromPiggy
         {
             if (_isGrounded)
             {
-                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
                 _isGrounded = false;
             }
         }
@@ -101,7 +101,7 @@ namespace EscapeFromPiggy
         private void HandleMovement()
         {
             // Apply horizontal movement
-            rb.velocity = new Vector2(_horizontalInput * moveSpeed, rb.velocity.y);
+            rb.linearVelocity = new Vector2(_horizontalInput * moveSpeed, rb.linearVelocity.y);
         }
 
         #endregion
