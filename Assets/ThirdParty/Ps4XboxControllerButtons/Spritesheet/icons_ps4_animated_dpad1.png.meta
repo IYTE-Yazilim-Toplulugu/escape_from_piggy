@@ -1,0 +1,1794 @@
+fileFormatVersion: 2
+guid: bc25c2c013b02e1f79c796e3a76fa72d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6779560333203823649
+    second: icons_ps4_animated_dpad1_0
+  - first:
+      213: 7703968279162563394
+    second: icons_ps4_animated_dpad1_1
+  - first:
+      213: -4541730832798284113
+    second: icons_ps4_animated_dpad1_2
+  - first:
+      213: 2166257544905781646
+    second: icons_ps4_animated_dpad1_3
+  - first:
+      213: -746578988204991968
+    second: icons_ps4_animated_dpad1_4
+  - first:
+      213: 2052904185958423922
+    second: icons_ps4_animated_dpad1_5
+  - first:
+      213: -7656229007374928830
+    second: icons_ps4_animated_dpad1_6
+  - first:
+      213: -5952667529792094793
+    second: icons_ps4_animated_dpad1_7
+  - first:
+      213: 8063202690191400016
+    second: icons_ps4_animated_dpad1_8
+  - first:
+      213: 3662790089533383228
+    second: icons_ps4_animated_dpad1_9
+  - first:
+      213: 7273817735733096186
+    second: icons_ps4_animated_dpad1_10
+  - first:
+      213: 1686606407309403158
+    second: icons_ps4_animated_dpad1_11
+  - first:
+      213: 8553116894494056019
+    second: icons_ps4_animated_dpad1_12
+  - first:
+      213: -8351795416713044523
+    second: icons_ps4_animated_dpad1_13
+  - first:
+      213: -2323379546008662992
+    second: icons_ps4_animated_dpad1_14
+  - first:
+      213: -650301342597394788
+    second: icons_ps4_animated_dpad1_15
+  - first:
+      213: 573438160980653410
+    second: icons_ps4_animated_dpad1_16
+  - first:
+      213: -2075353301749089677
+    second: icons_ps4_animated_dpad1_17
+  - first:
+      213: -6810766197523956980
+    second: icons_ps4_animated_dpad1_18
+  - first:
+      213: -8488872887259443058
+    second: icons_ps4_animated_dpad1_19
+  - first:
+      213: -496360045766260952
+    second: icons_ps4_animated_dpad1_20
+  - first:
+      213: 9176906555121632262
+    second: icons_ps4_animated_dpad1_21
+  - first:
+      213: 1689445000336659351
+    second: icons_ps4_animated_dpad1_22
+  - first:
+      213: 5869613457662421871
+    second: icons_ps4_animated_dpad1_23
+  - first:
+      213: -8213043409752145251
+    second: icons_ps4_animated_dpad1_24
+  - first:
+      213: 1245869744376525129
+    second: icons_ps4_animated_dpad1_25
+  - first:
+      213: -7630950419038549947
+    second: icons_ps4_animated_dpad1_26
+  - first:
+      213: -1796097949917034659
+    second: icons_ps4_animated_dpad1_27
+  - first:
+      213: 7840381701321248203
+    second: icons_ps4_animated_dpad1_28
+  - first:
+      213: -1320188048969557993
+    second: icons_ps4_animated_dpad1_29
+  - first:
+      213: -5094753363867694027
+    second: icons_ps4_animated_dpad1_30
+  - first:
+      213: -2965032219992960394
+    second: icons_ps4_animated_dpad1_31
+  - first:
+      213: 4696362185380600862
+    second: icons_ps4_animated_dpad1_32
+  - first:
+      213: -6860872342657645997
+    second: icons_ps4_animated_dpad1_33
+  - first:
+      213: -6565928959666999778
+    second: icons_ps4_animated_dpad1_34
+  - first:
+      213: -597006575007821421
+    second: icons_ps4_animated_dpad1_35
+  - first:
+      213: 7284848506762733876
+    second: icons_ps4_animated_dpad1_36
+  - first:
+      213: -3970059090969704506
+    second: icons_ps4_animated_dpad1_37
+  - first:
+      213: 5167268595012247637
+    second: icons_ps4_animated_dpad1_38
+  - first:
+      213: -425999932146653137
+    second: icons_ps4_animated_dpad1_39
+  - first:
+      213: -5667456920941795250
+    second: icons_ps4_animated_dpad1_40
+  - first:
+      213: -2920475150461803111
+    second: icons_ps4_animated_dpad1_41
+  - first:
+      213: 5821445940221807626
+    second: icons_ps4_animated_dpad1_42
+  - first:
+      213: -6405800831100084857
+    second: icons_ps4_animated_dpad1_43
+  - first:
+      213: 5606346004830188283
+    second: icons_ps4_animated_dpad1_44
+  - first:
+      213: 5279177043397525013
+    second: icons_ps4_animated_dpad1_45
+  - first:
+      213: -7085478970845930255
+    second: icons_ps4_animated_dpad1_46
+  - first:
+      213: 739585964471664811
+    second: icons_ps4_animated_dpad1_47
+  - first:
+      213: 8013171382880873974
+    second: icons_ps4_animated_dpad1_48
+  - first:
+      213: -8094637632676007491
+    second: icons_ps4_animated_dpad1_49
+  - first:
+      213: -351412192992368409
+    second: icons_ps4_animated_dpad1_50
+  - first:
+      213: -8021390916837411361
+    second: icons_ps4_animated_dpad1_51
+  - first:
+      213: 1696349146631379814
+    second: icons_ps4_animated_dpad1_52
+  - first:
+      213: -4543645167904743747
+    second: icons_ps4_animated_dpad1_53
+  - first:
+      213: 873043139506098299
+    second: icons_ps4_animated_dpad1_54
+  - first:
+      213: -7857084726757817634
+    second: icons_ps4_animated_dpad1_55
+  - first:
+      213: -7775048827277740894
+    second: icons_ps4_animated_dpad1_56
+  - first:
+      213: 4673238076068580191
+    second: icons_ps4_animated_dpad1_57
+  - first:
+      213: -975455209140517011
+    second: icons_ps4_animated_dpad1_58
+  - first:
+      213: 1532539555605380585
+    second: icons_ps4_animated_dpad1_59
+  - first:
+      213: -5816065818143209876
+    second: icons_ps4_animated_dpad1_60
+  - first:
+      213: -6519681030255610904
+    second: icons_ps4_animated_dpad1_61
+  - first:
+      213: -4124062655931416587
+    second: icons_ps4_animated_dpad1_62
+  - first:
+      213: -1838005976652340659
+    second: icons_ps4_animated_dpad1_63
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 52
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12c51f11436d51e50800000000000000
+      internalID: 6779560333203823649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 56
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24bac50255ef9ea60800000000000000
+      internalID: 7703968279162563394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_2
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 52
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa68e95eed788f0c0800000000000000
+      internalID: -4541730832798284113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_3
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 52
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e817e1082c7101e10800000000000000
+      internalID: 2166257544905781646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_4
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 56
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02a5543ad5e93a5f0800000000000000
+      internalID: -746578988204991968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_5
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 52
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27dd6f9fa716d7c10800000000000000
+      internalID: 2052904185958423922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_6
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 52
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2443060484c9fb590800000000000000
+      internalID: -7656229007374928830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_7
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 56
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bd7db49b60e36da0800000000000000
+      internalID: -5952667529792094793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_8
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 52
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05c15d4402046ef60800000000000000
+      internalID: 8063202690191400016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_9
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 52
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c32657d1e28d4d230800000000000000
+      internalID: 3662790089533383228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_10
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 56
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afeae4b31bac1f460800000000000000
+      internalID: 7273817735733096186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_11
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 52
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61423976797086710800000000000000
+      internalID: 1686606407309403158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 47
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35ed5bacf76c2b670800000000000000
+      internalID: 8553116894494056019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_13
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 40
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dd55167156781c80800000000000000
+      internalID: -8351795416713044523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_14
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 47
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03cceb9dc92b1cfd0800000000000000
+      internalID: -2323379546008662992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_15
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 40
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9ec585df5aa9f6f0800000000000000
+      internalID: -650301342597394788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_16
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 47
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 265b7ed18f245f700800000000000000
+      internalID: 573438160980653410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_17
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 40
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37abfc1fa2dd233e0800000000000000
+      internalID: -2075353301749089677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_18
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 47
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0bb8547a3c4b71a0800000000000000
+      internalID: -6810766197523956980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_19
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 40
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e80d473c517713a80800000000000000
+      internalID: -8488872887259443058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 36
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 827c76f0b239c19f0800000000000000
+      internalID: -496360045766260952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_21
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 31
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6048afaf3ebea5f70800000000000000
+      internalID: 9176906555121632262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_22
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 36
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79350a8d64d127710800000000000000
+      internalID: 1689445000336659351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_23
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 36
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b22d8575e057150800000000000000
+      internalID: 5869613457662421871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_24
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 31
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d924cdc8888650e80800000000000000
+      internalID: -8213043409752145251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_25
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 36
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94138fd7ee73a4110800000000000000
+      internalID: 1245869744376525129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_26
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 36
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 548c69e360b691690800000000000000
+      internalID: -7630950419038549947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_27
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 31
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5743614e6af217e0800000000000000
+      internalID: -1796097949917034659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_28
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 36
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcdc9b20e91aecc60800000000000000
+      internalID: 7840381701321248203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_29
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 36
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7181470d6ffbdade0800000000000000
+      internalID: -1320188048969557993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_30
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 31
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53c80780fcccb49b0800000000000000
+      internalID: -5094753363867694027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_31
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 36
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6725bb3c7e61ad6d0800000000000000
+      internalID: -2965032219992960394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 20
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1c10347684dc2140800000000000000
+      internalID: 4696362185380600862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_33
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 24
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 352c69e64f849c0a0800000000000000
+      internalID: -6860872342657645997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_34
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 20
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1e2992266221e4a0800000000000000
+      internalID: -6565928959666999778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_35
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 20
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3911610eea107b7f0800000000000000
+      internalID: -597006575007821421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_36
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 24
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 439a020ce1bf81560800000000000000
+      internalID: 7284848506762733876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_37
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 20
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c7c0718a4487e8c0800000000000000
+      internalID: -3970059090969704506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_38
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 20
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 550acb8e863d5b740800000000000000
+      internalID: 5167268595012247637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_39
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 24
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f28ee0a915b861af0800000000000000
+      internalID: -425999932146653137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_40
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 20
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e486f6735f52951b0800000000000000
+      internalID: -5667456920941795250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_41
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 20
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9956e51f2536877d0800000000000000
+      internalID: -2920475150461803111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_42
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 24
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0c8f024d3ee9c050800000000000000
+      internalID: 5821445940221807626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_43
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 20
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d906065160a17a0800000000000000
+      internalID: -6405800831100084857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_44
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 15
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf275d9dcfdbdcd40800000000000000
+      internalID: 5606346004830188283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_45
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 8
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51e3b1afc87634940800000000000000
+      internalID: 5279177043397525013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_46
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 16
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fc5a3f9a625bad90800000000000000
+      internalID: -7085478970845930255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_47
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 8
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba0c2352489834a00800000000000000
+      internalID: 739585964471664811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_48
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 15
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fda0f8cae0843f60800000000000000
+      internalID: 8013171382880873974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_49
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 8
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db176d6d5f11aaf80800000000000000
+      internalID: -8094637632676007491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_50
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 15
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e8e2fae8788f1bf0800000000000000
+      internalID: -351412192992368409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_51
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 8
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd57c55d57b4ea090800000000000000
+      internalID: -8021390916837411361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b100caf84aa8710800000000000000
+      internalID: 1696349146631379814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_53
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbe1e950bcab1f0c0800000000000000
+      internalID: -4543645167904743747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_54
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 4
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b705adb1c1cad1c00800000000000000
+      internalID: 873043139506098299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_55
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 4
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed20473d11706f290800000000000000
+      internalID: -7857084726757817634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_56
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a4faca194a791490800000000000000
+      internalID: -7775048827277740894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_57
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 4
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5bc5e2354daad040800000000000000
+      internalID: 4673238076068580191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_58
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 4
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6700ecc7ac7672f0800000000000000
+      internalID: -975455209140517011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_59
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9edf7182b9ca44510800000000000000
+      internalID: 1532539555605380585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_60
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 4
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c66484704fe294fa0800000000000000
+      internalID: -5816065818143209876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_61
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 4
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e3f2ce45a07585a0800000000000000
+      internalID: -6519681030255610904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_62
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 0
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fff0c95dd264c6c0800000000000000
+      internalID: -4124062655931416587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_ps4_animated_dpad1_63
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 4
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d42a79a6d471e76e0800000000000000
+      internalID: -1838005976652340659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      icons_ps4_animated_dpad1_0: 6779560333203823649
+      icons_ps4_animated_dpad1_1: 7703968279162563394
+      icons_ps4_animated_dpad1_10: 7273817735733096186
+      icons_ps4_animated_dpad1_11: 1686606407309403158
+      icons_ps4_animated_dpad1_12: 8553116894494056019
+      icons_ps4_animated_dpad1_13: -8351795416713044523
+      icons_ps4_animated_dpad1_14: -2323379546008662992
+      icons_ps4_animated_dpad1_15: -650301342597394788
+      icons_ps4_animated_dpad1_16: 573438160980653410
+      icons_ps4_animated_dpad1_17: -2075353301749089677
+      icons_ps4_animated_dpad1_18: -6810766197523956980
+      icons_ps4_animated_dpad1_19: -8488872887259443058
+      icons_ps4_animated_dpad1_2: -4541730832798284113
+      icons_ps4_animated_dpad1_20: -496360045766260952
+      icons_ps4_animated_dpad1_21: 9176906555121632262
+      icons_ps4_animated_dpad1_22: 1689445000336659351
+      icons_ps4_animated_dpad1_23: 5869613457662421871
+      icons_ps4_animated_dpad1_24: -8213043409752145251
+      icons_ps4_animated_dpad1_25: 1245869744376525129
+      icons_ps4_animated_dpad1_26: -7630950419038549947
+      icons_ps4_animated_dpad1_27: -1796097949917034659
+      icons_ps4_animated_dpad1_28: 7840381701321248203
+      icons_ps4_animated_dpad1_29: -1320188048969557993
+      icons_ps4_animated_dpad1_3: 2166257544905781646
+      icons_ps4_animated_dpad1_30: -5094753363867694027
+      icons_ps4_animated_dpad1_31: -2965032219992960394
+      icons_ps4_animated_dpad1_32: 4696362185380600862
+      icons_ps4_animated_dpad1_33: -6860872342657645997
+      icons_ps4_animated_dpad1_34: -6565928959666999778
+      icons_ps4_animated_dpad1_35: -597006575007821421
+      icons_ps4_animated_dpad1_36: 7284848506762733876
+      icons_ps4_animated_dpad1_37: -3970059090969704506
+      icons_ps4_animated_dpad1_38: 5167268595012247637
+      icons_ps4_animated_dpad1_39: -425999932146653137
+      icons_ps4_animated_dpad1_4: -746578988204991968
+      icons_ps4_animated_dpad1_40: -5667456920941795250
+      icons_ps4_animated_dpad1_41: -2920475150461803111
+      icons_ps4_animated_dpad1_42: 5821445940221807626
+      icons_ps4_animated_dpad1_43: -6405800831100084857
+      icons_ps4_animated_dpad1_44: 5606346004830188283
+      icons_ps4_animated_dpad1_45: 5279177043397525013
+      icons_ps4_animated_dpad1_46: -7085478970845930255
+      icons_ps4_animated_dpad1_47: 739585964471664811
+      icons_ps4_animated_dpad1_48: 8013171382880873974
+      icons_ps4_animated_dpad1_49: -8094637632676007491
+      icons_ps4_animated_dpad1_5: 2052904185958423922
+      icons_ps4_animated_dpad1_50: -351412192992368409
+      icons_ps4_animated_dpad1_51: -8021390916837411361
+      icons_ps4_animated_dpad1_52: 1696349146631379814
+      icons_ps4_animated_dpad1_53: -4543645167904743747
+      icons_ps4_animated_dpad1_54: 873043139506098299
+      icons_ps4_animated_dpad1_55: -7857084726757817634
+      icons_ps4_animated_dpad1_56: -7775048827277740894
+      icons_ps4_animated_dpad1_57: 4673238076068580191
+      icons_ps4_animated_dpad1_58: -975455209140517011
+      icons_ps4_animated_dpad1_59: 1532539555605380585
+      icons_ps4_animated_dpad1_6: -7656229007374928830
+      icons_ps4_animated_dpad1_60: -5816065818143209876
+      icons_ps4_animated_dpad1_61: -6519681030255610904
+      icons_ps4_animated_dpad1_62: -4124062655931416587
+      icons_ps4_animated_dpad1_63: -1838005976652340659
+      icons_ps4_animated_dpad1_7: -5952667529792094793
+      icons_ps4_animated_dpad1_8: 8063202690191400016
+      icons_ps4_animated_dpad1_9: 3662790089533383228
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
