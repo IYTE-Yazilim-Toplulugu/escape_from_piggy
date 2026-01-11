@@ -1,0 +1,277 @@
+name: Unity CI/CD
+
+on:
+  push:
+    branches:
+      - dev
+      - main
+  pull_request:
+    branches:
+      - dev
+      - main
+
+env:
+  UNITY_VERSION: 6000.0.3f1
+  UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+
+jobs:
+  # Job 1: Check code quality and run tests
+  test:
+    name: Test Unity Project
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      # Checkout repository
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: true
+
+      # Cache Library folder for faster builds
+      - name: Cache Unity Library
+        uses: actions/cache@v3
+        with:
+          path: Library
+          key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+          restore-keys: |
+            Library-
+
+      # Run Unity Tests (EditMode and PlayMode)
+      - name: Run Unity Tests
+        uses: game-ci/unity-test-runner@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          projectPath: .
+          unityVersion: ${{ env.UNITY_VERSION }}
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          checkName: Unity Test Results
+          coverageOptions: 'generateAdditionalMetrics;generateHtmlReport;generateBadgeReport'
+
+      # Upload test results
+      - name: Upload Test Results
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: Test Results
+          path: artifacts
+
+      # Upload coverage report
+      - name: Upload Coverage Report
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: Coverage Report
+          path: CodeCoverage
+
+  # Job 2: Build for multiple platforms
+  build:
+    name: Build for ${{ matrix.targetPlatform }}
+    runs-on: ubuntu-latest
+    needs: test
+    strategy:
+      fail-fast: false
+      matrix:
+        targetPlatform:
+          - StandaloneLinux64
+          - StandaloneWindows64
+          - StandaloneOSX
+          - WebGL
+
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: true
+
+      - name: Cache Unity Library
+        uses: actions/cache@v3
+        with:
+          path: Library
+          key: Library-${{ matrix.targetPlatform }}-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+          restore-keys: |
+            Library-${{ matrix.targetPlatform }}-
+            Library-
+
+      - name: Build Unity Project
+        uses: game-ci/unity-builder@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          projectPath: .
+          unityVersion: ${{ env.UNITY_VERSION }}
+          targetPlatform: ${{ matrix.targetPlatform }}
+          buildName: EscapeFromPiggy
+          buildsPath: builds
+          buildMethod: UnityBuilderAction.BuildScript.Build
+
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: Build-${{ matrix.targetPlatform }}
+          path: builds/${{ matrix.targetPlatform }}
+          retention-days: 7
+
+  # Job 3: Code Quality Checks
+  code-quality:
+    name: Code Quality Analysis
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Run C# linting (optional - requires .editorconfig)
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '7.x'
+
+      - name: Check C# Code Style
+        run: |
+          dotnet format --verify-no-changes --verbosity diagnostic || true
+        continue-on-error: true
+
+      # Check for TODO/FIXME comments
+      - name: Check for TODOs
+        run: |
+          echo "Checking for TODO/FIXME comments..."
+          TODO_COUNT=$(grep -r "TODO\|FIXME" Assets/_EscapeFromPiggy/Scripts --exclude-dir=ThirdParty || echo "0")
+          echo "Found TODOs/FIXMEs:"
+          echo "$TODO_COUNT"
+        continue-on-error: true
+
+  # Job 4: Validate commit messages
+  validate-commits:
+    name: Validate Commit Messages
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate Commits
+        run: |
+          echo "Checking commit message format..."
+          git log --format=%s origin/${{ github.base_ref }}..${{ github.sha }} | while read message; do
+            if ! echo "$message" | grep -qE '^(feat|fix|docs|chore|refactor|test|style|perf)\(.+\):'; then
+              echo "❌ Invalid commit message: $message"
+              echo "Expected format: type(scope): description"
+              echo "Types: feat, fix, docs, chore, refactor, test, style, perf"
+              exit 1
+            else
+              echo "✅ Valid: $message"
+            fi
+          done
+
+  # Job 5: Security scan (optional)
+  security-scan:
+    name: Security Scan
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Run GitGuardian scan
+        uses: GitGuardian/ggshield-action@v1
+        continue-on-error: true
+        env:
+          GITHUB_PUSH_BEFORE_SHA: ${{ github.event.before }}
+          GITHUB_PUSH_BASE_SHA: ${{ github.event.base }}
+          GITHUB_DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+          GITGUARDIAN_API_KEY: ${{ secrets.GITGUARDIAN_API_KEY }}
+
+  # Job 6: Deployment (only on main branch)
+  # deploy:
+  #   name: Deploy to Itch.io
+  #   runs-on: ubuntu-latest
+  #   needs: build
+  #   if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+  #   timeout-minutes: 20
+  #
+  #   steps:
+  #     - name: Download WebGL Build
+  #       uses: actions/download-artifact@v3
+  #       with:
+  #         name: Build-WebGL
+  #         path: builds/WebGL
+  #
+  #     - name: Deploy to Itch.io
+  #       uses: josephbmanley/butler-publish-itchio-action@master
+  #       env:
+  #         BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
+  #         CHANNEL: webgl
+  #         ITCH_GAME: escape-from-piggy
+  #         ITCH_USER: ${{ secrets.ITCH_USER }}
+  #         PACKAGE: builds/WebGL
+  #         VERSION: ${{ github.sha }}
+
+  # Job 7: Create GitHub Release (on tags)
+  release:
+    name: Create GitHub Release
+    runs-on: ubuntu-latest
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/v')
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Download All Builds
+        uses: actions/download-artifact@v3
+        with:
+          path: builds
+
+      - name: Zip Builds
+        run: |
+          cd builds
+          for dir in Build-*/; do
+            platform=$(basename "$dir" | sed 's/Build-//')
+            zip -r "EscapeFromPiggy-${platform}-${{ github.ref_name }}.zip" "$dir"
+          done
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: builds/*.zip
+          generate_release_notes: true
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # Job 8: Notify on Discord/Slack (optional)
+  # notify:
+  #   name: Send Notifications
+  #   runs-on: ubuntu-latest
+  #   needs: [test, build, code-quality]
+  #   if: always()
+  #
+  #   steps:
+  #     - name: Send Discord Notification
+  #       uses: sarisia/actions-status-discord@v1
+  #       if: always()
+  #       continue-on-error: true
+  #       with:
+  #         webhook: ${{ secrets.DISCORD_WEBHOOK }}
+  #         title: "Escape from Piggy CI/CD"
+  #         description: "Build and test results"
+  #         color: ${{ job.status == 'success' && '0x00ff00' || '0xff0000' }}
+  #         username: GitHub Actions
