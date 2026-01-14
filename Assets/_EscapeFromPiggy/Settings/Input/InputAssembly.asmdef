@@ -1,8 +1,7 @@
 {
-    "name": "EscapeFromPiggy",
-    "rootNamespace": "EscapeFromPiggy",
+    "name": "InputAssembly",
+    "rootNamespace": "",
     "references": [
-        "GUID:2ad7d691182340342b9a36893b38775d",
         "GUID:75469ad4d38634e559750d17036d5f7c"
     ],
     "includePlatforms": [],
