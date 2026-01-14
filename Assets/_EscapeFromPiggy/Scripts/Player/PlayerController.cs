@@ -115,7 +115,7 @@ namespace EscapeFromPiggy.Player
             {
                 _coyoteTimeCounter -= Time.deltaTime;
             }
-            
+
             // Jump buffer countdown
             if (_jumpBufferCounter > 0f)
             {
@@ -127,7 +127,7 @@ namespace EscapeFromPiggy.Player
         {
             // Sync with physics velocity first
             _velocity.y = _rb.linearVelocity.y;
-            
+
             // Can jump if: on ground OR coyote time active
             bool canJump = _coyoteTimeCounter > 0f;
 
