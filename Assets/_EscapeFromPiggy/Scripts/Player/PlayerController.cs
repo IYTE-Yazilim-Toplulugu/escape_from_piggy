@@ -1,4 +1,5 @@
 using UnityEngine;
+using EscapeFromPiggy.Managers;
 
 namespace EscapeFromPiggy.Player
 {
@@ -81,26 +82,20 @@ namespace EscapeFromPiggy.Player
 
         private void HandleInput()
         {
-            // Jump buffer - remember jump input for short time
-            if (Input.GetButtonDown("Jump"))
+            // Jump (with Buffer system)
+            if (InputManager.Instance.JumpPressed)
             {
                 _jumpBufferCounter = _jumpBufferTime;
             }
-
-            // Dash input
-            if (Input.GetButtonDown("Dash") && _dashChargesRemaining > 0 && !_isDashing)
+            else
             {
-                StartDash();
+                _jumpBufferCounter -= Time.deltaTime;
             }
 
-            // Wall jump
-            if (Input.GetButtonDown("Jump") && _isTouchingWall && !_isGrounded)
+            // Dash input
+            if (InputManager.Instance.DashPressed && _dashChargesRemaining > 0 && !_isDashing)
             {
-                float direction = -Mathf.Sign(transform.localScale.x);
-                _velocity = new Vector2(direction * _wallJumpDirection.x, _wallJumpDirection.y) * _wallJumpForce;
-
-                // Flip character
-                transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+                StartDash();
             }
         }
 
@@ -140,9 +135,9 @@ namespace EscapeFromPiggy.Player
             }
 
             // Variable jump height - cut velocity if button released
-            if (Input.GetButtonUp("Jump") && _rb.linearVelocity.y > 0f)
+            if (!InputManager.Instance.JumpHeld && _velocity.y > 0f)
             {
-                _velocity.y = _rb.linearVelocity.y * _jumpCutMultiplier;
+                _velocity.y *= _jumpCutMultiplier;
             }
 
             // Faster falling for better game feel
@@ -158,7 +153,9 @@ namespace EscapeFromPiggy.Player
 
         private void HandleMovement()
         {
-            float inputX = Input.GetAxisRaw("Horizontal");
+            // Doğrudan InputManager'dan okuyoruz
+            float inputX = InputManager.Instance.MoveInput.x;
+
             float targetSpeed = inputX * _moveSpeed;
 
             // Smooth acceleration/deceleration
@@ -174,7 +171,7 @@ namespace EscapeFromPiggy.Player
             _dashChargesRemaining--;
 
             // Get dash direction (8-directional)
-            Vector2 inputDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+            Vector2 inputDir = InputManager.Instance.MoveInput;
 
             // If no input, dash in facing direction
             if (inputDir.magnitude < 0.01f)
