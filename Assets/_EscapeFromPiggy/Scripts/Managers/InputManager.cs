@@ -20,6 +20,8 @@ namespace EscapeFromPiggy.Managers
         public bool DashPressed { get; private set; }
         public bool InteractPressed { get; private set; }
 
+        public bool GrabHeld { get; private set; }
+
         private void Awake()
         {
             // Singleton pattern
@@ -30,7 +32,7 @@ namespace EscapeFromPiggy.Managers
             }
 
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(transform.root.gameObject);
 
             // Initialize input actions
             _inputActions = new PlayerInputActions();
@@ -43,6 +45,8 @@ namespace EscapeFromPiggy.Managers
             // Subscribe to input events
             _inputActions.Player.Jump.started += OnJumpStarted;
             _inputActions.Player.Jump.canceled += OnJumpCanceled;
+            _inputActions.Player.Grab.started += OnGrabStarted;
+            _inputActions.Player.Grab.canceled += OnGrabCanceled;
             _inputActions.Player.Dash.started += OnDashStarted;
             _inputActions.Player.Interact.started += OnInteractStarted;
         }
@@ -52,6 +56,8 @@ namespace EscapeFromPiggy.Managers
             // Unsubscribe to prevent memory leaks
             _inputActions.Player.Jump.started -= OnJumpStarted;
             _inputActions.Player.Jump.canceled -= OnJumpCanceled;
+            _inputActions.Player.Grab.started -= OnGrabStarted;
+            _inputActions.Player.Grab.canceled -= OnGrabCanceled;
             _inputActions.Player.Dash.started -= OnDashStarted;
             _inputActions.Player.Interact.started -= OnInteractStarted;
 
@@ -93,6 +99,16 @@ namespace EscapeFromPiggy.Managers
         private void OnInteractStarted(InputAction.CallbackContext context)
         {
             InteractPressed = true;
+        }
+
+        private void OnGrabStarted(InputAction.CallbackContext context)
+        {
+            GrabHeld = true;
+        }
+
+        private void OnGrabCanceled(InputAction.CallbackContext context)
+        {
+            GrabHeld = false;
         }
 
         // Utility method to enable/disable input (useful for pausing, cutscenes)

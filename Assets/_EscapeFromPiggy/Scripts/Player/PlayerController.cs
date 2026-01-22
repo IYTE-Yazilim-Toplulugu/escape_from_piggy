@@ -29,6 +29,9 @@ namespace EscapeFromPiggy.Player
         [SerializeField] private float _wallSlideSpeed = 2f;
         [SerializeField] private float _wallJumpForce = 10f;
         [SerializeField] private Vector2 _wallJumpDirection = new Vector2(1f, 1.5f);
+        [SerializeField] private Transform _wallCheck;
+        [SerializeField] private LayerMask _wallLayer;
+        [SerializeField] private float _wallCheckRadius = 0.2f;
 
         [Header("Ground Check")]
         [SerializeField] private LayerMask _groundLayer;
@@ -42,6 +45,8 @@ namespace EscapeFromPiggy.Player
         private Vector2 _velocity;
         private bool _isGrounded;
         private bool _isTouchingWall;
+        private bool _isWallGrabbing;
+        private bool _isWallSliding;
         private int _dashChargesRemaining;
         private bool _isDashing;
 
@@ -72,9 +77,9 @@ namespace EscapeFromPiggy.Player
             }
             else
             {
-                HandleMovement();
-                HandleJump();
                 HandleWall();
+                HandleJump();
+                HandleMovement();
             }
 
             ApplyVelocity();
@@ -120,13 +125,18 @@ namespace EscapeFromPiggy.Player
 
         private void HandleJump()
         {
-            // Sync with physics velocity first
-            _velocity.y = _rb.linearVelocity.y;
+            // Don't process jump/gravity if holding the wall
+            if (_isWallGrabbing) return;
 
-            // Can jump if: on ground OR coyote time active
+            // Sync with physics velocity only if not sliding
+            if (!_isWallSliding)
+            {
+                _velocity.y = _rb.linearVelocity.y;
+            }
+
+            // Jump execution
             bool canJump = _coyoteTimeCounter > 0f;
 
-            // Execute jump if buffered input exists
             if (_jumpBufferCounter > 0f && canJump)
             {
                 _velocity.y = _jumpForce;
@@ -134,27 +144,43 @@ namespace EscapeFromPiggy.Player
                 _coyoteTimeCounter = 0f;
             }
 
-            // Variable jump height - cut velocity if button released
+            // Variable jump height
             if (!InputManager.Instance.JumpHeld && _velocity.y > 0f)
             {
                 _velocity.y *= _jumpCutMultiplier;
             }
 
-            // Faster falling for better game feel
-            if (_rb.linearVelocity.y < 0f)
+            // Gravity Control (Skip if sliding to avoid conflict)
+            if (!_isWallSliding)
             {
-                _rb.gravityScale = _baseGravityScale * _fallGravityMultiplier;
-            }
-            else
-            {
-                _rb.gravityScale = _baseGravityScale;
+                if (_rb.linearVelocity.y < 0f)
+                {
+                    _rb.gravityScale = _baseGravityScale * _fallGravityMultiplier;
+                }
+                else
+                {
+                    _rb.gravityScale = _baseGravityScale;
+                }
             }
         }
 
         private void HandleMovement()
         {
-            // Doğrudan InputManager'dan okuyoruz
+            // Reading directly from InputManager
             float inputX = InputManager.Instance.MoveInput.x;
+
+
+            // If facing right
+            if (inputX > 0.01f)
+            {
+                transform.localScale = new Vector3(1f, 1f, 1f); // Sağa bak
+            }
+            // If facing left
+            else if (inputX < -0.01f)
+            {
+                transform.localScale = new Vector3(-1f, 1f, 1f); // Sola bak
+            }
+            // ------------------------------------------
 
             float targetSpeed = inputX * _moveSpeed;
 
@@ -210,23 +236,51 @@ namespace EscapeFromPiggy.Player
             _isGrounded = Physics2D.OverlapBox(position, _groundCheckSize, 0f, _groundLayer);
 
             // Reset dash charges when grounded
-            if (_isGrounded)
+            if (_isGrounded && !_isDashing)
             {
                 _dashChargesRemaining = _maxDashCharges;
             }
 
             // Wall check
-            float direction = Mathf.Sign(transform.localScale.x);
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right * direction, 0.6f, _groundLayer);
-            _isTouchingWall = hit.collider != null;
+            _isTouchingWall = Physics2D.OverlapCircle(_wallCheck.position, _wallCheckRadius, _wallLayer);
         }
 
         private void HandleWall()
         {
-            if (_isTouchingWall && !_isGrounded && _velocity.y < 0f)
+            // Reset wall states
+            _isWallGrabbing = false;
+            _isWallSliding = false;
+
+            // Check wall interaction only when airborne
+            if (_isTouchingWall && !_isGrounded)
             {
+                // Wall unstick logic (cancel if moving away from wall)
+                float inputX = InputManager.Instance.MoveInput.x;
+                float facingDirection = Mathf.Sign(transform.localScale.x);
+
+                if (Mathf.Abs(inputX) > 0.1f && Mathf.Sign(inputX) != facingDirection)
+                {
+                    return;
+                }
+
+                // Wall grab
+                if (InputManager.Instance.GrabHeld)
+                {
+                    _isWallGrabbing = true;
+                    _rb.gravityScale = 0f;
+                    _velocity = Vector2.zero;
+                }
                 // Wall slide
-                _velocity.y = Mathf.Max(_velocity.y, -_wallSlideSpeed);
+                else if (_rb.linearVelocity.y < 0f)
+                {
+                    _isWallSliding = true;
+
+                    // Clamp slide speed
+                    if (_velocity.y < -_wallSlideSpeed)
+                    {
+                        _velocity.y = -_wallSlideSpeed;
+                    }
+                }
             }
         }
 

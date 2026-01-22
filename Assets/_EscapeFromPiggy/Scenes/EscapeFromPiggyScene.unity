@@ -162,8 +162,8 @@ GameObject:
   - component: {fileID: 272055818}
   - component: {fileID: 272055817}
   - component: {fileID: 272055816}
-  m_Layer: 6
-  m_Name: Grund (2)
+  m_Layer: 9
+  m_Name: Wall 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -746,7 +746,7 @@ GameObject:
   - component: {fileID: 1183278865}
   - component: {fileID: 1183278864}
   m_Layer: 6
-  m_Name: Grund
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1057,7 +1057,7 @@ MonoBehaviour:
   _jumpForce: 15
   _jumpCutMultiplier: 0.4
   _baseGravityScale: 5
-  _fallGravityMultiplier: 1
+  _fallGravityMultiplier: 2.5
   _coyoteTime: 0.1
   _jumpBufferTime: 0.1
   _dashSpeed: 15
@@ -1066,6 +1066,11 @@ MonoBehaviour:
   _wallSlideSpeed: 2
   _wallJumpForce: 10
   _wallJumpDirection: {x: 1, y: 1.5}
+  _wallCheck: {fileID: 0}
+  _wallLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  _wallCheckRadius: 0.2
   _groundLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -1082,8 +1087,8 @@ GameObject:
   - component: {fileID: 1712485625}
   - component: {fileID: 1712485624}
   - component: {fileID: 1712485623}
-  m_Layer: 6
-  m_Name: Grund (1)
+  m_Layer: 9
+  m_Name: Wall 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
