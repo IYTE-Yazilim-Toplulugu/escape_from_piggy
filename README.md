@@ -35,7 +35,7 @@ Assets/
 1. Clone the repository
 2. Open project in Unity Hub (Unity 2022.3 LTS or newer)
 3. Open `Assets/_EscapeFromPiggy/Scenes/SampleScene.unity`
-4. Read the [PROJECT_STRUCTURE.md](Assets/_EscapeFromPiggy/PROJECT_STRUCTURE.md) for organization guidelines
+4. Read the [PROJECT_STRUCTURE.md](docs/PROJECT_STRUCTURE.md) for organization guidelines
 
 ## Development Guidelines
 
@@ -92,7 +92,3 @@ Tracked file types:
 ## Team
 
 Software Society - IYTE Yazılım Topluluğu
-
-## License
-
-[Add your license here]
